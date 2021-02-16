@@ -1,0 +1,10 @@
+username:  p_f17_3
+
+password:  45trzb
+
+database name:  p_f17_3_db
+
+note sessions must redirect to 'https' not http
+
+note: seating main floor - 299 , concourse - 200, ground - 180 
+in test table names: total_average, mainfloor-clean , concourse_clean , ground_floor_clean , 

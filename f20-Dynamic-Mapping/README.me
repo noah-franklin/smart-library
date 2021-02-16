@@ -1,0 +1,55 @@
+README for Dynamic Map Project
+Written by Anthony DiNardi (dinardia1@hawkmail.newpaltz.edu)
+
+====================================================================================
+Database
+====================================================================================
+The database for this project can be accessed at https://cs.newpaltz.edu/phpmyadmin/
+with the following credentials:
+    username: p_f17_7
+    password: 191fne
+
+The data is in the database titled "p_f17_7_db".
+
+Some of the tables have a "Map" attribute. This specifies which of the three maps
+the object is located on.
+0 = Main Floor
+1 = Concourse
+2 = Ground Floor
+
+The shelflocations table has an attribute called "Class". This is used by the search
+algorithm to find the correct bookshelf. 
+The format of the attribute is as follows:
+
+    [Floor]-[Shelf Number 1] [Floor]-[Shelf Number 2]
+
+For example, 1-1 1-4 means that the bookshelf has the call number range of 
+shelf 1 and shelf 4 on floor 1. If you look in the booklocations table, the call number 
+ranges are listed for shelves 1 and 4. This system can be reduced to become less 
+redundant.
+
+====================================================================================
+Admin Page
+====================================================================================
+
+An administrator page can be used to add/edit/delete entries. This page can be
+accessed from the web app by clicking the login button at the top of the page.
+There are test credentials for easy logging in:
+
+    username: a
+    password: a
+
+The database also has some other available login credentials
+
+====================================================================================
+Accessing the project
+====================================================================================
+
+The project with all the code can be accessed through the school's server.
+Using a program called "WinSCP", login to the server at wyvern.cs.newpaltz.edu
+and login with your school credentials.
+
+The file path of the project is /var/www/projects/f17-07/Project/(Fall2020)Dynamic-Mapping/
+
+To view the project online, go to http://cs.newpaltz.edu/p/f17-07/Project/(Fall2020)Dynamic-Mapping/
+

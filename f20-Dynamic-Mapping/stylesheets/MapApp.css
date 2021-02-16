@@ -1,0 +1,134 @@
+#mainfloormap 
+{
+    margin: 0 auto;
+    display: block;
+}
+        
+#groundfloormap 
+{
+	margin: 0 auto;
+	display: none;
+}
+
+#concoursemap 
+{
+	margin: 0 auto;
+	display: none;
+}
+
+#about 
+{
+	padding-left: 14px;
+	margin: 0 auto;
+	display: none;
+}
+
+.info_panel 
+{
+	background-color: rgba(255, 255, 255, .8);
+	padding: 5px;
+	font-size: 16px;
+	font-family: Helvetica, Arial, sans-serif;
+	position: absolute;
+	border: 1px solid #333;
+	color: #333;
+	white-space: nowrap;
+}
+
+textarea 
+{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+#submit 
+{
+	width: 100%;
+	background-color: #0694CF;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#submit:hover 
+{
+	background-color: #043E7E;
+}
+
+p 
+{
+	padding: 10%;
+}
+
+.bodydiv 
+{
+	padding: 20px;
+}
+/* navbar */
+
+.navbar-default 
+{
+	background-color: #0694CF;
+}
+/* title */
+
+.navbar-default .navbar-brand 
+{
+	color: #777;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus 
+{
+	color: #5E5E5E;
+}
+/* link */
+
+.navbar-default .navbar-nav>li>a 
+{
+	color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus 
+{
+	color: white;
+	background-color: #043E7E;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus 
+{
+	color: #555;
+	background-color: #E7E7E7;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus 
+{
+	color: #555;
+	background-color: #D5D5D5;
+}
+
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus 
+{
+	color: 333;
+	background-color: #043E7E;
+}
+
+.info_panel::first-line 
+{
+	font-weight: bold;
+}

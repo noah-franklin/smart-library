@@ -1,0 +1,81 @@
+@Author: Anthony DiNardi (dinardia1@hawkmail.newpaltz.edu)
+
+This is a description of the progress and changes I have made to
+the dynamic mapping system
+
+3/29/2018
+-(layoutDisplayer.php) 
+I designed a PHP script that gets the shelf location data from the
+database, processes each row of data, and echos a rectangle element with the
+correct x-y coordinates, and height and width of that bookshelf. I had to swap
+the height and width values when echoing the rectangle element because the current
+map using a transform attribute to rotate the shelves
+
+-(index.html)
+This file is just a copy of the main map page (DynamicMap.html) but I deleted every 
+shelf rectangle element and replaced them with a script that creates an XMLHTTP
+request that calls layoutDisplayer.php and places the output (dynamically-created shelf rectangle 
+elements) in the concourseShelf group element
+
+//------------------------------------------------------------------------------------------------
+
+4/3/2018
+-(layoutDisplayer.php)
+This file now queries the database for shelves on the main floor.
+
+-(layoutDisplayer2/3.php)
+I copied the pre-existing layoutDisplayer file and just made it so it queries for shelves on the 
+concourse and the ground floors.
+
+-(index.html)
+I altered the script with the XMLHTTP request so that the function takes two parameters: an HTML 
+element ID and the file name of the PHP script. The function can then be called for each floor of 
+the library. I also tried to use a hidden input with the value of the floor and submitting it through
+a form so I can get away with using 1 PHP file for every floor. This would help make the program more
+dynamic. For now, I will just use 3 different PHP files, 1 for each floor.
+
+-(Database)
+I inputted the x, y, height, and width values into my test database in order to display each library
+floor dynamically, rather than them being displayed using static, hard-coded HTML elements.
+
+//--------------------------------------------------------------------------------------------------
+
+4/7/2018
+-(Database)
+I finished inputting the x, y, height, and width values of the ground floor shelves into the
+database. I also did some tweaking of the x and y values to better line up the shelves.
+
+-(floorDisplayers)
+I made it so the PHP files echo out the Shelf number as the element ID for easy testing and
+value changes.
+
+//--------------------------------------------------------------------------------------------------
+
+4/11/2018
+-(Database)
+I made a new column in the shelf locations table corresponding to the pairs of shelves that
+are together. For example, in the original HTML, the concourse shelves have a numbering system
+like (Floor-Shelf). Every rectangle has two of these numbers which correspond to two shelves 
+and are based on the book locations table. I entered this information in the database for each
+shelf in order to make the search function work with the newly implemented shelf displaying system.
+
+-(index.html)
+I altered the search button so that it uses the original function just so I can check if the class
+numbering system works. It does work so now I am going to try to have the search algorithm pull from
+the database instead of the Excel spreadsheet.
+
+-(concourseDisplayer.php)
+Now echos the class name (Floor-Shelf). This is only changed for the concourse displayer because
+there is no book location data for the other two floors.
+
+//---------------------------------------------------------------------------------------------------
+
+4/12/2018
+-(bookLocations.php)
+I created a new PHP file dedicated to receiving the book location data from the database and returning
+it to index.html. The PHP script organizes the data in the way it was organized in the Excel file.
+This is done in order to keep the search algorithm relatively the same.
+
+-(index.html)
+The getText function now calls the bookLocations.php file instead of using the Excel file. The algorithm
+runs perfectly using this method.

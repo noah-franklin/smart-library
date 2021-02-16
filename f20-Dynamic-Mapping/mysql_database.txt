@@ -1,0 +1,5 @@
+username:  p_f17_7
+
+password:  191fne
+
+database name:  p_f17_7_db
