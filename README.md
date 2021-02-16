@@ -14,7 +14,7 @@ This repository documents our project done for **CPS485**.
 
 3. **Class End Date:** May 5, 2021
             
-              Team: 
+            Team: 
               Noah Franklin           (Computer Science)
               Alexandra Maceda        (Computer Science) 
               Yitzhak Alvarez         (Computer Science)
