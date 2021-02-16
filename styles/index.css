@@ -1,0 +1,15 @@
+:root {
+  --npo: #f58426;
+  --npb: #003e7e;
+}
+
+body {
+  background-color: var(--npb);
+}
+
+.seperator {
+  width: auto;
+  height: 10px;
+  background-color: var(--npo);
+  margin: 1em auto;
+}

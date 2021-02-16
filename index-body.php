@@ -22,8 +22,7 @@ echo htmlspecialchars($_SESSION["username"]);
 echo "</font>! WELCOME to ABC Inc.</h4>";
 }
 ?> 
-        <p> <IMG SRC="images/clouds.jpg" width="90" height="70""> 
-        <H4>We are proud to support the ABC soccer team !  </H4>
+       
 </CENTER>
 
 </body>
