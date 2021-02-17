@@ -1,6 +1,6 @@
-![Image of Logo](https://www.newpaltz.edu/media/identity/logos/newpaltzlogo.jpg)
-
 # Spring 2021 Projects
+
+![Image of Logo](https://www.newpaltz.edu/media/identity/logos/newpaltzlogo.jpg)
 
 This repository documents our project done for **CPS485**.
 
