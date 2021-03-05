@@ -1,0 +1,48 @@
+/* Nav Bar */
+.nplogo {
+  width: 200px;
+  height: 75px;
+}
+
+.welcome {
+  margin: 0 3em;
+  padding: 1em 0 0 0;
+  color: white;
+  text-align: end;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.nav {
+    padding-top: 3em;
+}
+
+.navlinks {
+  text-align: center;
+
+}
+
+li {
+  display: inline;
+  
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+
+  
+  
+}
+
+/* li:last-child {
+   
+    border-right: 2px solid var(--npo)
+
+} */
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--npo);
+}
