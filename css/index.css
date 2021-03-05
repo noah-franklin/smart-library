@@ -1,0 +1,36 @@
+:root {
+  --npo: #f58426;
+  --npb: #003e7e;
+  --maincolor: #80b4de;
+  --concoursecolor: #cad08f;
+  --groundcolor: #fecc83;
+}
+h1 {
+  font-size: 24px;
+}
+body {
+  background-image: url("/assets/backgroundimage5.jpg");
+  
+  margin: auto 6em;
+}
+/* Seperator */
+.seperator {
+  max-width: 1400px;
+  height: 5px;
+
+  background-color: var(--npo);
+  margin: 0 auto;
+}
+
+.main {
+  padding: 1em 0;
+  background-color: var(--npb);
+
+  border-top: 4px solid var(--npo); 
+  border-bottom: 4px solid var(--npo); 
+  /* border-bottom: 4px solid var(--npo); */
+  
+  max-width: 1300px;
+  margin: auto;
+  padding: 5em;
+}

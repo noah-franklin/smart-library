@@ -1,0 +1,89 @@
+.homepage {
+  display: flex;
+  justify-content: center;
+}
+
+.maintext {
+  color: var(--maincolor);
+  display: none;
+  
+}
+
+.concoursetext {
+  color: var(--concoursecolor);
+  display: none;
+}
+
+.groundtext {
+  color: var(--groundcolor);
+  display: none;
+}
+
+.texty {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 1em;
+  font-size: 3em;
+  text-align: center;
+}
+
+.imgstack {
+  display: grid;
+
+  position: relative;
+}
+
+.homeimg {
+  transform: matrix(1, 0, -1, 1, 0, 0);
+  border-radius: 50px;
+  width: 300px;
+  height: 150px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mainimgstack {
+  grid-column: 1;
+  grid-row: 1;
+}
+.mainimg {
+  z-index: 3;
+}
+.mainimg:hover {
+  border: 3px solid var(--maincolor);
+}
+
+.concourseimgstack {
+  grid-column: 1;
+  grid-row: 1;
+  padding-top: 30%;
+}
+.concourseimg {
+  z-index: 2;
+}
+.concourseimg:hover {
+  border: 3px solid var(--concoursecolor);
+}
+
+.groundimgstack {
+  grid-column: 1;
+  grid-row: 1;
+  padding-top: 60%;
+}
+.groundimg {
+  z-index: 1;
+}
+
+
+
+.groundimg:hover {
+  border: 3px solid var(--groundcolor);
+}
+
+
+
+.title {
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
