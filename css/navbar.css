@@ -1,48 +1,16 @@
-/* Nav Bar */
-.nplogo {
-  width: 200px;
-  height: 75px;
+nav {
+  background-color: var(--npb);
 }
 
-.welcome {
-  margin: 0 3em;
-  padding: 1em 0 0 0;
-  color: white;
-  text-align: end;
-  text-shadow: 2px 2px 4px #000000;
+.nav-link {
+  color: white !important;
+  padding: 0 1em !important;
 }
 
-.nav {
-    padding-top: 3em;
+.navbar-text {
+  color: white !important;
 }
 
-.navlinks {
-  text-align: center;
-
-}
-
-li {
-  display: inline;
-  
-  border-radius: 10px;
-  padding: 5px;
-  margin: 5px;
-
-  
-  
-}
-
-/* li:last-child {
-   
-    border-right: 2px solid var(--npo)
-
-} */
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--npo);
+.navbar-collapse {
+  flex-grow: unset;
 }

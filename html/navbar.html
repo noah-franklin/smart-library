@@ -2,27 +2,36 @@
   <link href="../css/navbar.css" rel="stylesheet" />
 </head>
 
-<div class="navlinks">
-  <nav class="navbar" style="padding: 0">
-    <div class="container" style="padding: 0; margin: auto">
-      <span
-        ><img
-          src="../assets/newpaltzlogo.png"
-          class="img-fluid nplogo"
-          alt="New Paltz Logo"
-      /></span>
+<nav class="navbar navbar-light fixed-top navbar-expand-sm p-0 shadow">
+  <div class="container-fluid">
+    <span class="navbar-brand p-0">
+      <img
+        class="img-fluid"
+        src="../assets/newpaltzlogo.png"
+        alt="New Paltz Logo"
+        width="125"
+      />
+    </span>
+    <span class="navbar-text">Welcome to the Smart Library</span>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="welcome">
-        <h1><strong> Welcome to the Smart Library</strong></h1>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
       </div>
-
-      <ul class="nav">
-        <li><a href="">Home</a></li>
-        <li><a href="">Login</a></li>
-        <!-- <li><input class="input" placeholder="Search" style="width: 100px;"></li> -->
-        
-      </ul>
-      <!-- Navbar content -->
+      <button class="btn" style="background-color: orange; color: white">
+        Login
+      </button>
     </div>
-  </nav>
-</div>
+  </div>
+</nav>

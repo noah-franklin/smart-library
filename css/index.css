@@ -5,13 +5,14 @@
   --concoursecolor: #cad08f;
   --groundcolor: #fecc83;
 }
+
 h1 {
   font-size: 24px;
 }
 body {
-  background-image: url("../assets/backgroundimage5.jpg");
+  /* background-image: url("../assets/backgroundimage5.jpg"); */
   
-  margin: auto 6em;
+  color: white;
 }
 /* Seperator */
 .seperator {
@@ -24,13 +25,13 @@ body {
 
 .main {
   padding: 1em 0;
-  background-color: var(--npb);
-
-  border-top: 4px solid var(--npo); 
-  border-bottom: 4px solid var(--npo); 
+ 
   /* border-bottom: 4px solid var(--npo); */
-  
-  max-width: 1300px;
-  margin: auto;
+  border-radius: 5px;
+
   padding: 5em;
+}
+
+.darkmode {
+  background-color: #121212;
 }

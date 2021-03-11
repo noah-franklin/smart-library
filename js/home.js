@@ -2,28 +2,35 @@ $(document).ready(function () {
   // jQuery methods go here...
   $(".mainimg").hover(
     function () {
-      $(".maintext").css("display", "block");
+      $(".maintext").css("visibility", "visible");
+      $(".maintext").css("color", "#80b4de");
+      $(".maintext").text("MAIN");
     },
     function () {
-      $(".maintext").css("display", "none");
+      $(".maintext").css("visibility", "hidden");
     }
   );
 
   $(".concourseimg").hover(
     function () {
-      $(".concoursetext").css("display", "block");
+      $(".maintext").css("visibility", "visible");
+      $(".maintext").css("color", "#cad08f");
+      $(".maintext").text("CONCOURSE");
     },
     function () {
-      $(".concoursetext").css("display", "none");
+      $(".maintext").css("visibility", "hidden");
     }
   );
 
   $(".groundimg").hover(
     function () {
-      $(".groundtext").css("display", "block");
+      $(".maintext").css("visibility", "visible");
+      $(".maintext").css("color", "#fecc83");
+      $(".maintext").text("GROUND");
     },
     function () {
-      $(".groundtext").css("display", "none");
+      $(".maintext").css("visibility", "hidden");
     }
   );
+  console.log("home loaded");
 });
