@@ -11,7 +11,7 @@ $(document).ready(function () {
     }
   );
 
-  $(".mainlink").click(function () {
+  $(".mainimg").click(function () {
     $(".main").load("../html/main.html");
     return false;
   });
