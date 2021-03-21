@@ -4,5 +4,6 @@ $(document).ready(function () {
  
   $(".main").load("./html/home.html");
   $(".footer").load("./html/footer.html");
+  
   console.log("index loaded");
 });
