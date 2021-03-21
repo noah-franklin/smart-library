@@ -11,9 +11,9 @@ $(document).ready(function () {
     }
   );
 
-  $(".mainimg").click(function (e) {
-    e.preventDefault();
+  $(".mainlink").click(function () {
     $(".main").load("../html/main.html");
+    return false;
   });
 
   $(".concourseimg").hover(
