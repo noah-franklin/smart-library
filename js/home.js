@@ -11,9 +11,10 @@ $(document).ready(function () {
     }
   );
 
-  $(".mainlink").click(function () {
+  $(".mainlink").click(function (e) {
+    e.preventDefault()
     $(".main").load("../html/main.html");
-    return false;
+
   });
 
   $(".concourseimg").hover(
