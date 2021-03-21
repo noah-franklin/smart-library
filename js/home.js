@@ -11,10 +11,8 @@ $(document).ready(function () {
     }
   );
 
-  $(".mainlink").click(function (e) {
-    e.preventDefault()
-    $(".main").load("../html/main.html");
-
+  $(".mainimg").click(function () {
+    //$(".main").load("./html/main.html");
   });
 
   $(".concourseimg").hover(
