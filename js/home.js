@@ -11,6 +11,10 @@ $(document).ready(function () {
     }
   );
 
+  $(".mainimg").click(function () {
+    $(".main").load("../html/main.html");
+  });
+
   $(".concourseimg").hover(
     function () {
       $(".maintext").css("visibility", "visible");

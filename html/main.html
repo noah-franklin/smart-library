@@ -1,0 +1,234 @@
+<script>
+  function loadDoc(el, url) {
+    //runs PHP script to access database and display shelves
+    var xhttp = new XMLHttpRequest();
+    console.log(el);
+    xhttp.open("GET", url, true);
+    xhttp.onload = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById(el).innerHTML = this.responseText;
+      }
+    };
+    xhttp.send();
+  }
+  loadDoc("shelvesMain", "../f20-Dynamic-Mapping/mainFloorDisplayer.php");
+  //   loadDoc("shelvesConcourse", "concourseDisplayer.php");
+  //   loadDoc("shelvesGround", "groundDisplayer.php");
+</script>
+
+<svg
+  id="mainfloormap"
+  version="1.1"
+  xmlns:x="&ns_extend;"
+  xmlns:i="&ns_ai;"
+  xmlns:graph="&ns_graphs;"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  x="0px"
+  y="0px"
+  viewbox="0 0 720 873"
+  style="enable-background: new 0 0 720 873; margin: auto 0; display: block"
+  xml:space="preserve"
+>
+  <switch>
+    <g i:extraneous="self">
+      <g id="color_blocks"></g>
+      <g id="lines">
+        <polyline
+          class="st2"
+          points="10.1,414.3 11.2,63 709.4,63.8 712,863.7 10,863 10.1,528 "
+        />
+      </g>
+      <g id="shelvesMain">
+        <!-- mainFloorDisplayer.php takes care of displaying these shelves -->
+      </g>
+      <g id="text">
+        <rect x="7.6" y="15.4" class="st4" width="701.9" height="48.3" />
+        <text transform="matrix(1 0 0 1 241.8191 51.4319)" class="st5 st6">
+          Main Floor
+        </text>
+        <rect x="440.1" y="447.7" class="st4" width="182" height="56.5" />
+        <text transform="matrix(1 0 0 1 472.3978 464.9856)">
+          <tspan x="0" y="0" class="st7 st8">Computers</tspan>
+          <tspan x="6" y="24" class="st7 st8">& Printers</tspan>
+        </text>
+        <rect x="136.1" y="495.6" class="st4" width="218.6" height="23.9" />
+        <text transform="matrix(1 0 0 1 190.0314 512.8294)" class="st7 st8">
+          Help Desk
+        </text>
+        <rect x="249" y="345" class="st4" width="111.3" height="32.9" />
+        <text transform="matrix(1 0 0 1 274.0449 362.2889)" class="st7 st8">
+          Stairs
+        </text>
+      </g>
+    </g>
+  </switch>
+</svg>
+
+<style type="text/css" media="all">
+  #bookshelves {
+    margin: 0 auto;
+    display: none;
+  }
+
+  #mainfloormap {
+    margin: 0 auto;
+    display: block;
+  }
+
+  #groundfloormap {
+    margin: 0 auto;
+    display: none;
+  }
+
+  #concoursemap {
+    margin: 0 auto;
+    display: none;
+  }
+
+  #about {
+    margin: 15 auto;
+    display: none;
+  }
+
+  #search {
+    margin: 15 auto;
+    display: none;
+  }
+
+  .info_panel {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+    position: absolute;
+    border: 1px solid #333;
+    color: #333;
+    white-space: nowrap;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  #submit {
+    width: 100%;
+    background-color: #0694cf;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #submit:hover {
+    background-color: #043e7e;
+  }
+
+  p {
+    padding: 10%;
+  }
+
+  .bodydiv {
+    padding: 20px;
+  }
+  /* navbar */
+
+  .navbar-default {
+    background-color: #0694cf;
+  }
+  /* title */
+
+  .navbar-default .navbar-brand {
+    color: #777;
+  }
+
+  .navbar-default .navbar-brand:hover,
+  .navbar-default .navbar-brand:focus {
+    color: #5e5e5e;
+  }
+  /* link */
+
+  .navbar-default .navbar-nav > li > a {
+    color: white;
+  }
+
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+    color: white;
+    background-color: #043e7e;
+  }
+
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #d5d5d5;
+  }
+
+  .navbar-default .navbar-toggle,
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus {
+    color: 333;
+    background-color: #043e7e;
+  }
+
+  .info_panel::first-line {
+    font-weight: bold;
+  }
+
+  .st01 {
+    fill: #80b4de;
+  }
+  .st02 {
+    fill: #cad08f;
+  }
+  .st03 {
+    fill: #fecc83;
+  }
+  .st1 {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+  .st2 {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+  .st4 {
+    fill: none;
+  }
+  .st5 {
+    font-family: "Helvetica-Light";
+  }
+  .st6 {
+    font-size: 50px;
+  }
+  .st7 {
+    font-family: "Helvetica";
+  }
+  .st8 {
+    font-size: 24px;
+  }
+</style>
