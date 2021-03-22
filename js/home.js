@@ -11,10 +11,10 @@ $(document).ready(function () {
     }
   );
 
-  $(".mainimg").click(function (e) {
-    e.preventDefault();
-    //$(".main").load("./html/main.html");
-  });
+  // $(".mainimg").click(function (e) {
+  //   e.preventDefault();
+  //   //$(".main").load("./html/main.html");
+  // });
 
   $(".concourseimg").hover(
     function () {
