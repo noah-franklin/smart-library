@@ -4,20 +4,20 @@
 }
 
 #mainfloormap {
-  margin: 0 auto;
+  margin: 2em auto;
   height: 650px;
   display: block;
 }
 
 #groundfloormap {
-  margin: 0 auto;
+  margin: 2em auto;
   height: 650px;
 
   display: block;
 }
 
 #concoursemap {
-  margin: 0 auto;
+  margin: 2em auto;
   height: 650px;
   display: block;
 }
