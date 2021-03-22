@@ -1,5 +1,11 @@
 $(document).ready(function () {
   // jQuery methods go here...
+
+  $(".mainimg").click(function (e) {
+    e.preventDefault();
+    $(".main").load("../html/main.html");
+  });
+
   $(".mainimg").hover(
     function () {
       $(".maintext").css("visibility", "visible");
@@ -10,11 +16,6 @@ $(document).ready(function () {
       $(".maintext").css("visibility", "hidden");
     }
   );
-
-  // $(".mainimg").click(function (e) {
-  //   e.preventDefault();
-  //   //$(".main").load("./html/main.html");
-  // });
 
   $(".concourseimg").hover(
     function () {
