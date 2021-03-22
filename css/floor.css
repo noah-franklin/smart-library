@@ -5,16 +5,20 @@
 
 #mainfloormap {
   margin: 0 auto;
+  height: 700px;
   display: block;
 }
 
 #groundfloormap {
   margin: 0 auto;
+  height: 700px;
+
   display: block;
 }
 
 #concoursemap {
   margin: 0 auto;
+  height: 700px;
   display: block;
 }
 

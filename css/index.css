@@ -24,12 +24,12 @@ body {
 }
 
 .main {
-  padding: 1em 0;
+  margin-top: .5em;
  
   /* border-bottom: 4px solid var(--npo); */
   border-radius: 5px;
 
-  padding: 5em;
+
 }
 
 .darkmode {

@@ -7,8 +7,8 @@ nav {
   padding: 0 1em !important;
 }
 
-.navbar-text {
-  color: white !important;
+.heady {
+  font-size: large;
 }
 
 .navbar-collapse {
