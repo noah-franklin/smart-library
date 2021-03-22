@@ -24,7 +24,7 @@ body {
 }
 
 .main {
-  margin-top: .5em;
+  margin-top: 0;
  
   /* border-bottom: 4px solid var(--npo); */
   border-radius: 5px;
