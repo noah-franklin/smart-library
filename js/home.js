@@ -6,6 +6,7 @@ $(document).ready(function () {
   $(".mainlink").click(function (e) {
     e.preventDefault();
     $(".main").load("./html/main.html");
+    $(".heady").text("Main Floor").css("color", "#80b4de");
   });
 
   $(".mainimg").hover(
@@ -23,6 +24,7 @@ $(document).ready(function () {
     e.preventDefault();
 
     $(".main").load("./html/concourse.html");
+    $(".heady").text("Concourse Floor").css("color", "#cad08f");
   });
 
   $(".concourseimg").hover(
@@ -39,6 +41,7 @@ $(document).ready(function () {
   $(".groundlink").click(function (e) {
     e.preventDefault();
     $(".main").load("./html/ground.html");
+    $(".heady").text("Ground Floor").css("color", "#fecc83");
   });
 
   $(".groundimg").hover(
