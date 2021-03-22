@@ -1,0 +1,59 @@
+<head>
+  <link href="./css/floor.css" rel="stylesheet" />
+</head>
+
+<!--Ground floor SVG-->
+<svg
+  id="groundfloormap"
+  version="1.1"
+  xmlns:x="&ns_extend;"
+  xmlns:i="&ns_ai;"
+  xmlns:graph="&ns_graphs;"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  x="0px"
+  y="0px"
+  viewbox="0 0 720 886.8"
+  style="enable-background: new 0 0 720 886.8"
+  xml:space="preserve"
+>
+  <switch>
+    <g i:extraneous="self">
+      <g id="color_blocks"></g>
+      <g id="lines">
+        <rect
+          x="-48.1"
+          y="119.1"
+          transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 830.6214 110.6306)"
+          class="st1"
+          width="816.2"
+          height="703"
+        />
+      </g>
+      <g id="shelvesGround">
+        <!-- groundDisplayer.php takes care of displaying these shelves -->
+      </g>
+      <g id="text">
+        <rect x="7.5" y="14" class="st4" width="704.9" height="48.3" />
+        <text transform="matrix(1 0 0 1 212.7262 50.0434)" class="st5 st6">
+          Ground Floor
+        </text>
+        <rect x="202.5" y="343.8" class="st4" width="195.3" height="61.5" />
+        <text transform="matrix(1 0 0 1 269.459 361.0605)" class="st7 st8">
+          Stairs
+        </text>
+        <rect x="-3.9" y="560.7" class="st4" width="137.5" height="50.7" />
+        <text transform="matrix(1 0 0 1 31.5566 577.9268)">
+          <tspan x="0" y="0" class="st7 st8">Micro-</tspan>
+          <tspan x="3.3" y="24" class="st7 st8">forms</tspan>
+        </text>
+      </g>
+    </g>
+  </switch>
+</svg>
+
+<script>
+  $(document).ready(function () {
+    loadDoc("shelvesGround", "./f20-Dynamic-Mapping/groundDisplayer.php");
+  });
+</script>
