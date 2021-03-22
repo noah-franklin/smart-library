@@ -1,6 +1,8 @@
 $(document).ready(function () {
   // jQuery methods go here...
-
+  // document.getElementById("mainfloormap").style.display = "block";
+  // document.getElementById("groundfloormap").style.display = "none";
+  // document.getElementById("concoursemap").style.display = "none";
   $(".mainlink").click(function (e) {
     e.preventDefault();
     $(".main").load("./html/main.html");
@@ -17,6 +19,12 @@ $(document).ready(function () {
     }
   );
 
+  $(".concourselink").click(function (e) {
+    e.preventDefault();
+
+    $(".main").load("./html/concourse.html");
+  });
+
   $(".concourseimg").hover(
     function () {
       $(".maintext").css("visibility", "visible");
@@ -27,6 +35,11 @@ $(document).ready(function () {
       $(".maintext").css("visibility", "hidden");
     }
   );
+
+  $(".groundlink").click(function (e) {
+    e.preventDefault();
+    $(".main").load("./html/ground.html");
+  });
 
   $(".groundimg").hover(
     function () {
@@ -40,3 +53,16 @@ $(document).ready(function () {
   );
   console.log("home loaded");
 });
+
+function loadDoc(el, url) {
+  //runs PHP script to access database and display shelves
+  var xhttp = new XMLHttpRequest();
+  console.log(el);
+  xhttp.open("GET", url, true);
+  xhttp.onload = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById(el).innerHTML = this.responseText;
+    }
+  };
+  xhttp.send();
+}

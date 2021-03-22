@@ -1,21 +1,8 @@
-<script>
-  function loadDoc(el, url) {
-    //runs PHP script to access database and display shelves
-    var xhttp = new XMLHttpRequest();
-    console.log(el);
-    xhttp.open("GET", url, true);
-    xhttp.onload = function () {
-      if (this.readyState == 4 && this.status == 200) {
-        document.getElementById(el).innerHTML = this.responseText;
-      }
-    };
-    xhttp.send();
-  }
-  loadDoc("shelvesMain", "./f20-Dynamic-Mapping/mainFloorDisplayer.php");
-  //   loadDoc("shelvesConcourse", "concourseDisplayer.php");
-  //   loadDoc("shelvesGround", "groundDisplayer.php");
-</script>
+<head>
+  <link href="./css/floor.css" rel="stylesheet" />
+</head>
 
+<!-- Main floor SVG -->
 <svg
   id="mainfloormap"
   version="1.1"
@@ -27,7 +14,7 @@
   x="0px"
   y="0px"
   viewbox="0 0 720 873"
-  style="enable-background: new 0 0 720 873; margin: auto 0; display: block"
+  style="enable-background: new 0 0 720 873"
   xml:space="preserve"
 >
   <switch>
@@ -65,170 +52,8 @@
   </switch>
 </svg>
 
-<style type="text/css" media="all">
-  #bookshelves {
-    margin: 0 auto;
-    display: none;
-  }
-
-  #mainfloormap {
-    margin: 0 auto;
-    display: block;
-  }
-
-  #groundfloormap {
-    margin: 0 auto;
-    display: none;
-  }
-
-  #concoursemap {
-    margin: 0 auto;
-    display: none;
-  }
-
-  #about {
-    margin: 15 auto;
-    display: none;
-  }
-
-  #search {
-    margin: 15 auto;
-    display: none;
-  }
-
-  .info_panel {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 5px;
-    font-size: 16px;
-    font-family: Helvetica, Arial, sans-serif;
-    position: absolute;
-    border: 1px solid #333;
-    color: #333;
-    white-space: nowrap;
-  }
-
-  textarea {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-
-  #submit {
-    width: 100%;
-    background-color: #0694cf;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  #submit:hover {
-    background-color: #043e7e;
-  }
-
-  p {
-    padding: 10%;
-  }
-
-  .bodydiv {
-    padding: 20px;
-  }
-  /* navbar */
-
-  .navbar-default {
-    background-color: #0694cf;
-  }
-  /* title */
-
-  .navbar-default .navbar-brand {
-    color: #777;
-  }
-
-  .navbar-default .navbar-brand:hover,
-  .navbar-default .navbar-brand:focus {
-    color: #5e5e5e;
-  }
-  /* link */
-
-  .navbar-default .navbar-nav > li > a {
-    color: white;
-  }
-
-  .navbar-default .navbar-nav > li > a:hover,
-  .navbar-default .navbar-nav > li > a:focus {
-    color: white;
-    background-color: #043e7e;
-  }
-
-  .navbar-default .navbar-nav > .active > a,
-  .navbar-default .navbar-nav > .active > a:hover,
-  .navbar-default .navbar-nav > .active > a:focus {
-    color: #555;
-    background-color: #e7e7e7;
-  }
-
-  .navbar-default .navbar-nav > .open > a,
-  .navbar-default .navbar-nav > .open > a:hover,
-  .navbar-default .navbar-nav > .open > a:focus {
-    color: #555;
-    background-color: #d5d5d5;
-  }
-
-  .navbar-default .navbar-toggle,
-  .navbar-default .navbar-toggle:hover,
-  .navbar-default .navbar-toggle:focus {
-    color: 333;
-    background-color: #043e7e;
-  }
-
-  .info_panel::first-line {
-    font-weight: bold;
-  }
-
-  .st01 {
-    fill: #80b4de;
-  }
-  .st02 {
-    fill: #cad08f;
-  }
-  .st03 {
-    fill: #fecc83;
-  }
-  .st1 {
-    fill: none;
-    stroke: #000000;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-miterlimit: 10;
-  }
-  .st2 {
-    fill: none;
-    stroke: #000000;
-    stroke-width: 3;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-miterlimit: 10;
-  }
-  .st4 {
-    fill: none;
-  }
-  .st5 {
-    font-family: "Helvetica-Light";
-  }
-  .st6 {
-    font-size: 50px;
-  }
-  .st7 {
-    font-family: "Helvetica";
-  }
-  .st8 {
-    font-size: 24px;
-  }
-</style>
+<script>
+  $(document).ready(function () {
+    loadDoc("shelvesMain", "./f20-Dynamic-Mapping/mainFloorDisplayer.php");
+  });
+</script>
