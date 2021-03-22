@@ -3,7 +3,7 @@ $(document).ready(function () {
 
   $(".mainlink").click(function (e) {
     e.preventDefault();
-    $(".main").load("./html/main.html");
+    $(".main").load("/html/main.html");
   });
 
   $(".mainimg").hover(
