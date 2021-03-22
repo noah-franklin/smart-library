@@ -34,9 +34,9 @@
 .mainimg {
   z-index: 3;
 }
-.mainimg:hover {
+/* .mainimg:hover {
   border: 3px solid var(--maincolor);
-}
+} */
 
 .concourseimgstack {
   grid-column: 1;
