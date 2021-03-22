@@ -1,6 +1,22 @@
 $(document).ready(function () {
   // jQuery methods go here...
 
+  $(".mainlink").click(function (e) {
+    e.preventDefault();
+    $(".main").load("../html/main.html");
+  });
+
+  $(".mainimg").hover(
+    function () {
+      $(".maintext").css("visibility", "visible");
+      $(".maintext").css("color", "#80b4de");
+      $(".maintext").text("MAIN");
+    },
+    function () {
+      $(".maintext").css("visibility", "hidden");
+    }
+  );
+
   $(".concourseimg").hover(
     function () {
       $(".maintext").css("visibility", "visible");
