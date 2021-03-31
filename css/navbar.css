@@ -7,6 +7,11 @@ nav {
   padding: 0 1em !important;
 }
 
+.nav-link:hover {
+  color: var(--npo) !important;
+}
+
+
 .heady {
   font-size: large;
 }
