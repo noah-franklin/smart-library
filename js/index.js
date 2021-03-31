@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  require("dotenv").config();
+ 
   // jQuery methods go here...
   $(".navybar").load("./html/navbar.html");
   $(".loginModal").load("./html/loginModal.html");
