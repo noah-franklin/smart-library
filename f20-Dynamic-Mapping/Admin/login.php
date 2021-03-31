@@ -9,7 +9,9 @@
 		// if a match is found, direct to admin controls page
 		if ($stmt->num_rows == 1)
 		{
-			header ("Location: .../index.html");
+			echo "<script>
+        window.location.replace('index.html');
+    </script>";
 			echo "<script>
         window.open('adminPanel.html', '_blank')
     </script>";
