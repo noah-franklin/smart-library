@@ -10,10 +10,9 @@
 		if ($stmt->num_rows == 1)
 		{
 			echo "<script>
-        window.location.href = '/p/s21-01/smart-library/';
-    </script>";
-			echo "<script>
-        window.open('adminPanel.html', '_blank')
+			window.open('adminPanel.html', '_blank');
+        	window.location.href = '/p/s21-01/smart-library/';
+			
     </script>";
 		}
 		//check that all fields are filled
