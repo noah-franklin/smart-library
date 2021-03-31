@@ -10,7 +10,7 @@
 		if ($stmt->num_rows == 1)
 		{
 			echo "<script>
-        window.location.replace('index.html');
+        window.location.replace('./index.html');
     </script>";
 			echo "<script>
         window.open('adminPanel.html', '_blank')
