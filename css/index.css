@@ -34,3 +34,7 @@ body {
 .darkmode {
   background-color: #121212;
 }
+
+.loginModal {
+  margin-top: 5em !important;
+}

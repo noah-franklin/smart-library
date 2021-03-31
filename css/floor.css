@@ -183,6 +183,12 @@ p {
   position: absolute;
   right: 0px;
   margin-right: 1em;
+  cursor: pointer;
+  padding: 0 0.25em;
+  
+  border-radius: 5px;
+  color: white;
+  background-color: red;
 }
 
 .avatar {
