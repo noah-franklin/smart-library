@@ -9,7 +9,10 @@
 		// if a match is found, direct to admin controls page
 		if ($stmt->num_rows == 1)
 		{
-			header ("Location: adminPanel.html");
+			//header ("Location: adminPanel.html");
+			echo "<script>
+        window.open('adminPanel.html', '_blank')
+    </script>";
 		}
 		//check that all fields are filled
 		else
@@ -21,4 +24,3 @@
 	}
 	$conn->close();
 ?>
-
