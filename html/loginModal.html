@@ -1,0 +1,44 @@
+<head>
+  <link href="./css/floor.css" rel="stylesheet" />
+</head>
+
+<div id="id01" class="loginmodal" style="display: none">
+  <span
+    onclick="document.getElementById('id01').style.display='none'"
+    class="closebtn close"
+    title="Close Modal"
+    >&times;</span
+  >
+  <form
+    class="loginmodal-content animate"
+    action="./f20-Dynamic-Mapping/Admin/login.php"
+    method="post"
+  >
+    <div class="imgcontainer">
+      <img
+        src="./f20-Dynamic-Mapping/assets/SUNY Logo.png"
+        alt="SUNY Logo"
+        class="avatar"
+        width="100px"
+      />
+    </div>
+
+    <div class="container">
+      <label>Username:</label
+      ><input type="text" name="Username" value="" required /><br />
+      <br /><label>Password:</label
+      ><input type="password" name="Password" value="" required /><br />
+      <br />
+      <div>
+        <input
+          class="modalLoginBtn"
+          id="submit"
+          type="submit"
+          name="submit"
+          value="Login"
+        />
+      </div>
+      
+    </div>
+  </form>
+</div>
