@@ -1,16 +1,19 @@
-.shelf {
+.NOWRAPPLS {
   flex-wrap: nowrap;
-  overflow: auto;
+  overflow: scroll;
 
+}
+
+.shelf {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 0 1em;
 }
 
 .section {
   padding: 0.5em;
   /* background-color: rgb(245 132 38); */
-  border-radius: 5px;
-  flex-wrap: nowrap;
-  
-  
+  border-radius: 5px;  
 }
 
 /* --- Book Image ---*/
@@ -18,7 +21,7 @@
   background-image: url("../assets/crop.png");
   background-repeat: no-repeat;
   background-size: 250px 80px;
- 
+  cursor: pointer;
   width: 250px;
   height: 80px;
   margin: 0.5em 0 !important;
