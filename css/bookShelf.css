@@ -1,0 +1,35 @@
+.NOWRAPPLS {
+  flex-wrap: nowrap;
+  overflow: scroll;
+
+}
+
+.shelf {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 0 1em;
+}
+
+.section {
+  padding: 0.5em;
+  /* background-color: rgb(245 132 38); */
+  border-radius: 5px;  
+}
+
+/* --- Book Image ---*/
+.rowStyle {
+  background-image: url("../assets/crop.png");
+  background-repeat: no-repeat;
+  background-size: 250px 80px;
+  cursor: pointer;
+  width: 250px;
+  height: 80px;
+  margin: 0.5em 0 !important;
+  border-radius: 5px;
+  padding: 0.5em;
+}
+
+.bookImg {
+  width: 50px;
+  height: 65px;
+}
