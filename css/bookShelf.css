@@ -4,7 +4,9 @@
   background-size: 100% 100%;
   display: flow-root list-item;
 }
-
+.row{
+    padding: 60px;
+}
 .col {
   float: left;
   width: 30%;
