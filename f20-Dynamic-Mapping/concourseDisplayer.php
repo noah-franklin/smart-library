@@ -15,11 +15,12 @@
             'Height' => $row['Height'],
             'ShelfNo' => $row['ShelfNo'],
             'Class' => $row['Class'],
-            'Map' => $row['Map']
+            'Map' => $row['Map'],
+            'Bookcase' => $row['BookCase']
         );
         //if shelf is not missing a value, echo a rectangle element representing the shelf
         if(!in_array("MISSING", $list[$i])) {
-            $string = "<svg width=&ldquo;5&rdquo; height=&ldquo;20&rdquo;><a href=tables/concourse/$i.html target=&ldquo;BOT&rdquo;><rect class=\"" . $list[$i]['Class'] . "\" id =\"" . $list[$i]['ShelfNo'] . "\" width=\"" . $list[$i]['Height'] . "\" height=\"" . $list[$i]['Width'] . "\" x=\"" . $list[$i]['X'] . "\" y=\"" . $list[$i]['Y'] . "\" style=\"cursor:pointer;\"/></a></svg>";
+            $string = "<svg width=&ldquo;5&rdquo; height=&ldquo;20&rdquo;><a href=./html/bookcases/$list[$i]['Bookcase']/a.html target=&ldquo;BOT&rdquo;><rect class=\"" . $list[$i]['Class'] . "\" id =\"" . $list[$i]['ShelfNo'] . "\" width=\"" . $list[$i]['Height'] . "\" height=\"" . $list[$i]['Width'] . "\" x=\"" . $list[$i]['X'] . "\" y=\"" . $list[$i]['Y'] . "\" style=\"cursor:pointer;\"/></a></svg>";
             echo($string);
         }
         $i++;
