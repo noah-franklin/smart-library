@@ -8,11 +8,11 @@
 
 .col {
   float: left;
-  width: 20%;
+  width: 30%;
 }
 
 .books {
   background-repeat: no-repeat;
   height: 150px;
-  padding-bottom: 1em;
+  padding: 1em;
 }
