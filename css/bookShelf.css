@@ -3,8 +3,8 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: flow-root list-item;
-  box-shadow: 3px 3px 15px black;
-  border-radius: ;
+  box-shadow: 3px 3px 20px black;
+  border-radius: 10px;
 }
 .row{
     padding: 60px;
