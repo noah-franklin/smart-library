@@ -6,7 +6,5 @@ $(document).ready(function () {
   $(".footer").load("./html/footer.html");
 
   console.log("index loaded");
-  function getBookCase(caseNum) {
-    $(".main").load("./html/bookcases/" + caseNum + "/a.html");
-  }
+ 
 });
