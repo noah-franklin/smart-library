@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: flow-root list-item;
+  box-shadow:  black;
 }
 .row{
     padding: 60px;
