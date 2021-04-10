@@ -8,3 +8,7 @@ $(document).ready(function () {
 
   console.log("index loaded");
 });
+
+function getBookCase(caseNum) {
+  $(".main").load("./html/bookcases/" + caseNum + "/a.html")
+}
