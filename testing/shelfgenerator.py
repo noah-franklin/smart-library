@@ -8,12 +8,14 @@ def get_stuff(directory, naming):
     files.sort()
     print(files)
     for file in files:
-        if file.startswith(".") or file.endswith(".py") or file.startswith("bookcases"):
+        if (file.startswith(".") or file.endswith(".py") or file.startswith("bookcases") 
+        or file.startswith("zipped") or file.startswith("BackUpCopy") or file.endswith(".sh")
+        or file.endswith(".txt") or file.endswith(".bat")):
             continue
         else:
             print("\n" + naming + ": " + file)
             if file.endswith(".jpg") and naming.startswith("Photos"):
-               
+                global f
                 f.write('<img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/'+directory[2:]+file+'"'+' />')
             
             if file.endswith(".jpg"):
@@ -27,7 +29,7 @@ def get_stuff(directory, naming):
                 get_stuff(directory+file+"/", "A or B")
 
             if (file.startswith("a")):
-                global f
+         
                 f = open(parent +"/a.html" , "w")
                 f.write('<head>\n')
                 f.write('<link href="./css/bookShelf.css" rel="stylesheet" />\n')
@@ -40,7 +42,7 @@ def get_stuff(directory, naming):
                 f.write("</div>\n")
 
             if (file.startswith("b")):
-                global f
+            
                 f = open(parent +"/b.html" , "w")
                 f.write('<head>\n')
                 f.write('<link href="./css/bookShelf.css" rel="stylesheet" />\n')
@@ -54,10 +56,12 @@ def get_stuff(directory, naming):
 
             if(file.startswith("s")):
                     # f.write(file+"\n")
+   
                 f.write('<div class="col section">\n')
                 get_stuff(directory+file+"/", "Rows")
                 f.write("</div>\n")
             if(file.startswith("r")):
+           
                     # f.write(file+"\n")
                 f.write('<div class="rowStyle">\n')
                 get_stuff(directory+file+"/", "Photos")
