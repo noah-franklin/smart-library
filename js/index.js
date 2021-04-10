@@ -1,5 +1,4 @@
 $(document).ready(function () {
- 
   // jQuery methods go here...
   $(".navybar").load("./html/navbar.html");
   $(".loginModal").load("./html/loginModal.html");
@@ -7,8 +6,7 @@ $(document).ready(function () {
   $(".footer").load("./html/footer.html");
 
   console.log("index loaded");
+  function getBookCase(caseNum) {
+    $(".main").load("./html/bookcases/" + caseNum + "/a.html");
+  }
 });
-
-function getBookCase(caseNum) {
-  $(".main").load("./html/bookcases/" + caseNum + "/a.html")
-}
