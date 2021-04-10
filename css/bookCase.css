@@ -1,0 +1,45 @@
+.NOWRAPPLS {
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+.shelf {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 0 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.section {
+  padding: 0.5em;
+  /* background-color: rgb(245 132 38); */
+  border-radius: 5px;
+}
+
+/* --- Book Image ---*/
+.rowStyle {
+  background-image: url("../assets/crop.png");
+  background-repeat: no-repeat;
+  background-size: 250px 80px;
+  cursor: pointer;
+  width: 250px;
+  height: 80px;
+  /* margin: 0.5em 0 !important; */
+  margin: auto;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.bookImg {
+  width: 50px;
+  height: 65px;
+  display: block;
+}
+h1 {
+  color: black;
+}
