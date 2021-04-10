@@ -1,7 +1,6 @@
 .shelf {
   background-image: url("../assets/crop.png");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: 100% 100%;
   float: left;
 }
@@ -9,10 +8,11 @@
 .col {
   float: left;
   width: 30%;
+  padding: 5px;
 }
 
 .books {
-  background-repeat: no-repeat;
-  height: 150px;
+  height: 250px;
+  width: 100%;
   padding: 1em;
 }
