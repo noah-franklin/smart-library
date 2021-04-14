@@ -6,13 +6,15 @@
   --groundcolor: #fecc83;
 }
 
+
 h1 {
   font-size: 24px;
 }
 body {
   /* background-image: url("../assets/backgroundimage5.jpg"); */
-  
+  min-height: 100%;
   color: white;
+  
 }
 /* Seperator */
 .seperator {
@@ -24,10 +26,18 @@ body {
 }
 
 .main {
-  margin-top: 1em;
+  
   /* border-bottom: 4px solid var(--npo); */
   border-radius: 5px;
-  margin: 0 1em;
+  position: relative;
+
+  margin: auto;
+  height: auto;
+
+  padding: 1em;
+
+  
+
 
 
 }
@@ -37,5 +47,13 @@ body {
 }
 
 .loginModal {
-  margin-top: 5em !important;
+  margin-top: 4em !important;
+}
+
+.footer {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navybar {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

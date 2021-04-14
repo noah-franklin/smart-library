@@ -3,19 +3,24 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 5em;
+  height: 100%;
 }
 
 .maintext {
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   margin: auto;
   padding: 0 0.5em;
   border-radius: 5px;
+  
+
 }
 
 .imgstack {
   display: grid;
   position: relative;
+  margin: auto;
+  width: 300px;
 }
 
 .homeimg {

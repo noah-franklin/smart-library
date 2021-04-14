@@ -5,6 +5,7 @@ nav {
 .nav-link {
   color: white !important;
   padding: 0 1em !important;
+  cursor: pointer;
 }
 
 .nav-link:hover {

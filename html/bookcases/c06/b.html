@@ -1,110 +1,112 @@
 <head>
-<link href="./css/bookShelf.css" rel="stylesheet" />
+<link href="./css/bookCase.css" rel="stylesheet" />
 </head>
-<h1>Shelf: c06
-Side: b</h1>
-<div class="container-fluid shelf">
+<div class="bookcaseInfo">
+<span>Bookcase: <strong>c06</strong></span>
+<span>Side: <span class="aSide" onclick="getBookCase('c06','a')">A</span> <span class="bSide" onclick="getBookCase('c06','b')">B</span></span>
+</div>
+<div class="container-fluid case">
 <div class="row NOWRAPPLS">
 <div class="col section">
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section1','row1')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section1/row1/20200130_172501.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section1/row1/20200130_172604.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section1/row1/20200130_172631.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section1','row2')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section1/row2/20200130_172907.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section1/row2/20200130_173027.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section1/row2/20200130_173035.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section1','row3')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section1/row3/20200130_173329.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section1/row3/20200130_173331.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section1/row3/20200130_173351.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section1','row4')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section1/row4/20200130_173541.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section1/row4/20200130_173548.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section1/row4/20200130_173602.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section1','row5')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section1/row5/20200130_173905.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section1/row5/20200130_173911.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section1/row5/20200130_173916.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section1','row6')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section1/row6/20200130_174129.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section1/row6/20200130_174136.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section1/row6/20200130_174141.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section1','row7')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section1/row7/20200130_174326.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section1/row7/20200130_174332.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section1/row7/20200130_174339.jpg" /></div>
 </div>
 <div class="col section">
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section2','row1')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section2/row1/20200130_172644.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section2/row1/20200130_172651.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section2/row1/20200130_172700.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section2','row2')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section2/row2/20200130_173042.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section2/row2/20200130_173049.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section2/row2/20200130_173054.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section2','row3')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section2/row3/20200130_173358.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section2/row3/20200130_173403.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section2/row3/20200130_173411.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section2','row4')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section2/row4/20200130_173607.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section2/row4/20200130_173611.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section2/row4/20200130_173614.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section2','row5')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section2/row5/20200130_173929.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section2/row5/20200130_173933.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section2/row5/20200130_173938.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section2','row6')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section2/row6/20200130_174145.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section2/row6/20200130_174152.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section2/row6/20200130_174157.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section2','row7')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section2/row7/20200130_174345.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section2/row7/20200130_174350.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section2/row7/20200130_174356.jpg" /></div>
 </div>
 <div class="col section">
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section3','row1')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section3/row1/20200130_172715.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section3/row1/20200130_172722.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section3/row1/20200130_172729.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section3','row2')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section3/row2/20200130_173100.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section3/row2/20200130_173107.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section3/row2/20200130_173112.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section3','row3')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section3/row3/20200130_173416.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section3/row3/20200130_173422.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section3/row3/20200130_173431.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section3','row4')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section3/row4/20200130_173710.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section3/row4/20200130_173717.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section3/row4/20200130_173722.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section3','row5')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section3/row5/20200130_173942.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section3/row5/20200130_173946.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section3/row5/20200130_173950.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section3','row6')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section3/row6/20200130_174201.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section3/row6/20200130_174215.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section3/row6/20200130_174220.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section3','row7')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section3/row7/20200130_174404.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section3/row7/20200130_174412.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section3/row7/20200130_174454.jpg" /></div>
 </div>
 <div class="col section">
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section4','row1')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section4/row1/20200130_172739.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section4/row1/20200130_172747.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section4/row1/20200130_172752.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section4','row2')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section4/row2/20200130_173120.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section4/row2/20200130_173153.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section4/row2/20200130_173201.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section4','row3')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section4/row3/20200130_173436.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section4/row3/20200130_173442.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section4/row3/20200130_173448.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section4','row4')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section4/row4/20200130_173730.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section4/row4/20200130_173736.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section4/row4/20200130_173742.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section4','row5')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section4/row5/20200130_173959.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section4/row5/20200130_174039.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section4/row5/20200130_174048.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section4','row6')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section4/row6/20200130_174224.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section4/row6/20200130_174229.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section4/row6/20200130_174232.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section4','row7')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section4/row7/20200130_174458.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section4/row7/20200130_174502.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section4/row7/20200130_174515.jpg" /></div>
 </div>
 <div class="col section">
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section5','row1')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section5/row1/20200130_172804.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section5/row1/20200130_172812.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section5/row1/20200130_172820.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section5','row2')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section5/row2/20200130_173210.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section5/row2/20200130_173225.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section5/row2/20200130_173232.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section5','row3')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section5/row3/20200130_173454.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section5/row3/20200130_173459.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section5/row3/20200130_173507.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section5','row4')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section5/row4/20200130_173828.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section5/row4/20200130_173836.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section5/row4/20200130_173841.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section5','row5')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section5/row5/20200130_174053.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section5/row5/20200130_174059.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section5/row5/20200130_174104.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section5','row6')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section5/row6/20200130_174236.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section5/row6/20200130_174238.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section5/row6/20200130_174302.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section5','row7')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section5/row7/20200130_174523.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section5/row7/20200130_174527.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section5/row7/20200130_174532.jpg" /></div>
 </div>
 <div class="col section">
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section6','row1')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section6/row1/20200130_172832.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section6/row1/20200130_172839.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section6/row1/20200130_172845.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section6','row2')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section6/row2/20200130_173241.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section6/row2/20200130_173255.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section6/row2/20200130_173302.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section6','row3')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section6/row3/20200130_173512.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section6/row3/20200130_173519.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section6/row3/20200130_173536.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section6','row4')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section6/row4/20200130_173849.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section6/row4/20200130_173854.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section6/row4/20200130_173859.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section6','row5')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section6/row5/20200130_174109.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section6/row5/20200130_174119.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section6/row5/20200130_174124.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section6','row6')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section6/row6/20200130_174308.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section6/row6/20200130_174313.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section6/row6/20200130_174321.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section6','row7')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section6/row7/20200130_174536.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section6/row7/20200130_174540.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section6/row7/20200130_174542.jpg" /></div>
 </div>
 <div class="col section">
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section7','row1')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section7/row1/20200130_172853.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section7/row1/20200130_172859.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section7/row1/20200130_172904.jpg" /></div>
-<div class="rowStyle">
+<div class="rowStyle" onclick="getBookShelf('/bookcases/c06/b/section7','row2')">
 <img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section7/row2/20200130_173309.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section7/row2/20200130_173317.jpg" /><img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/1-amit/c06/b/section7/row2/20200130_173323.jpg" /></div>
 </div>
 </div>

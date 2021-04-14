@@ -1,22 +1,59 @@
+h1 {
+  margin-left: 1em;
+  color: black;
+}
+
 .shelf {
   background-image: url("../assets/crop.png");
-  background-repeat: no-repeat;
+  margin: 0 5em;
   background-size: 100% 100%;
-  display: flow-root list-item;
-  box-shadow: 3px 3px 20px black;
-  border-radius: 10px;
+  width: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  padding: 0 1em;
+  padding-right: 5em;
+  margin-bottom: 3em;
+  
 }
-.row{
-    padding: 60px;
+.row {
+  display: flex;
+  padding: 60px;
+  overflow: scroll;
+  flex-wrap: nowrap;
+    
 }
 .col {
   float: left;
   width: 30%;
-  padding: 5px;
+  padding: 0;
 }
 
 .books {
-  height: 250px;
-  width: 100%;
-  padding: 1em;
+  height: 500px;
+  width: 350px;
+  min-width: 350px !important;
+
+}
+area {
+  border: 4px solid var(--npo); 
+}
+
+.bookcaseInfo {
+  margin: 1em  5em !important;
+  display: flex;
+  justify-content: space-between;
+  margin: .5em 5em;
+  font-size: 20px;  
+  color: black;
+ 
+}
+.bookcaseInfo:first-of-type {
+  margin-top: 2em;
+}
+.btn {
+  background-color: var(--npo);
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: .13em .25em;
+  
 }
