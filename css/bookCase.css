@@ -3,11 +3,12 @@
   overflow: scroll;
 }
 
-.shelf {
+.case {
   background-color: whitesmoke;
   border-radius: 5px;
-  padding: 0 1em;
+  padding: 1em 1em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 90%;
 }
 
 .section {
@@ -31,15 +32,35 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   flex-wrap: nowrap;
+  
   overflow-x: scroll;
   overflow-y: hidden;
 }
 
 .bookImg {
-  width: 50px;
+  width: 75px;
   height: 65px;
   display: block;
 }
 h1 {
   color: black;
+  margin-left: 1em;
+}
+
+.bookcaseInfo {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  margin: .5em 5em;
+  font-size: 20px;
+}
+.aSide {
+  padding: .13em .25em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.bSide {
+  padding: .13em .25em;
+  border-radius: 5px;
+  cursor: pointer;
 }

@@ -2,11 +2,20 @@
   <link href="./css/floor.css" rel="stylesheet" />
 </head>
 
-<div id="id01" class="loginmodal" style="display: none">
+<div
+  id="id01"
+  class="loginmodal"
+  style="display: none; z-index: 1000;"
+>
   <span
     onclick="document.getElementById('id01').style.display='none'"
     class="closebtn close"
     title="Close Modal"
+    style="
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background-color: var(--npo);
+    "
     >&times;</span
   >
   <form
@@ -36,9 +45,13 @@
           type="submit"
           name="submit"
           value="Login"
+          style="
+            background-color: var(--npb);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          "
         />
       </div>
-      
     </div>
   </form>
 </div>

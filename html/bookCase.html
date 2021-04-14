@@ -2,11 +2,14 @@
   <link href="./css/bookCase.css" rel="stylesheet" />
 </head>
 
-<h1>Shelf: c01 Side: A</h1>
+<div class="bookcaseInfo">
+  <span>Bookcase: c01</span>
+  <span>Side: <span class="aSide" onclick="getBookCase('c01','a')">A</span> <span class="bSide" onclick="getBookCase('c01','b')">B</span></span>
+</div>
 <div class="container-fluid shelf">
   <div class="row NOWRAPPLS">
     <div class="col section">
-      <div class="rowStyle">
+      <div class="rowStyle" onclick="tester()">
         <img
           class="bookImg"
           src="../testing/1-amit/c01/a/section1/row1/c01A_s1_L1-1.jpg"
