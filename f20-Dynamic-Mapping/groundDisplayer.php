@@ -14,7 +14,8 @@
             'Width' => $row['Width'],
             'Height' => $row['Height'],
             'ShelfNo' => $row['ShelfNo'],
-            'Map' => $row['Map']
+            'Map' => $row['Map'],
+            'Bookcase' => $row['BookCase']
         );
         //if shelf belongs to concourse map and is not missing a value, echo a rectangle element representing the shelf
         if(!in_array("MISSING", $list[$i])) {
