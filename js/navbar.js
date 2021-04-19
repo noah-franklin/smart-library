@@ -24,9 +24,26 @@ function getBookCase(caseNum, side) {
       }
     }
   );
-
 }
 
 function getBookShelf(dir, row) {
   $(".main").load("./html" + "/" + dir + "/" + row + ".html");
+}
+
+function getBookInfo() {
+  callNumbers = [
+    "F294.S2 J64 1996",
+    "F294.S2 S58 2014",
+    "F295.S1 U813",
+    "F311 .D66",
+  ];
+  callNumber = callNumbers[Math.floor(Math.random() * callNumbers.length)];
+  callNumberFormated = callNumber.replaceAll(" ", "%20");
+  console.log(callNumberFormated);
+  query =
+    "https://suny-new.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma990002702100204844&context=L&vid=01SUNY_NEW:01SUNY_NEW&lang=en&search_scope=MyInstitution&adaptor=Local%20Search%20Engine&tab=LibraryCatalog&query=any,contains," +
+    callNumberFormated +
+    "&offset=0";
+  console.log(query);
+  window.open(query, "_blank");
 }

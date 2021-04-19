@@ -18,17 +18,17 @@ def get_stuff(directory, naming):
             if file.endswith(".jpg") and naming.startswith("Photos"):
                 # global f, x, 
                 # global x
-                f.write('<img class="bookImg" src="http://a.cs.newpaltz.edu/vlib/idatabase/'+directory[2:]+file+'"'+' />')
+                f.write('<img class="bookImg" width=75px height=65px src="http://a.cs.newpaltz.edu/vlib/idatabase/'+directory[2:]+file+'"'+' />')
                 x.write('<div class="col">')
-                x.write('<img class="books" src="http://a.cs.newpaltz.edu/vlib/idatabase/'+directory[2:]+file+'"'+' usemap="bookmap'+str(counter)+'"/>')
+                x.write('<img class="books" src="http://a.cs.newpaltz.edu/vlib/idatabase/'+directory[2:]+file+'"'+' usemap="#bookmap'+str(counter)+'"/>')
                 x.write('<map name="bookmap'+str(counter)+'">')
-                x.write('<area shape="rect" coords="0,0,50,500" href="https://suny-new.primo.exlibrisgroup.com/permalink/01SUNY_NEW/5celm9/alma996664553604844" target="_blank"/>')
-                x.write('<area shape="rect" coords="50,0,100,500" href="https://suny-new.primo.exlibrisgroup.com/permalink/01SUNY_NEW/5celm9/alma996664553604844" target="_blank"/>')
-                x.write('<area shape="rect" coords="100,0,150,500" href="https://suny-new.primo.exlibrisgroup.com/permalink/01SUNY_NEW/5celm9/alma996664553604844" target="_blank"/>')
-                x.write('<area shape="rect" coords="150,0,200,500" href="https://suny-new.primo.exlibrisgroup.com/permalink/01SUNY_NEW/5celm9/alma996664553604844" target="_blank"/>')
-                x.write('<area shape="rect" coords="200,0,250,500" href="https://suny-new.primo.exlibrisgroup.com/permalink/01SUNY_NEW/5celm9/alma996664553604844" target="_blank"/>')
-                x.write('<area shape="rect" coords="250,0,300,500" href="https://suny-new.primo.exlibrisgroup.com/permalink/01SUNY_NEW/5celm9/alma996664553604844" target="_blank"/>')
-                x.write('<area shape="rect" coords="300,0,350,500" href="https://suny-new.primo.exlibrisgroup.com/permalink/01SUNY_NEW/5celm9/alma996664553604844" target="_blank"/>')
+                x.write('<area shape="rect" coords="0,0,50,500" onclick="getBookInfo()" href="#"/>')
+                x.write('<area shape="rect" coords="50,0,100,500" onclick="getBookInfo()" href="#"/>')
+                x.write('<area shape="rect" coords="100,0,150,500" onclick="getBookInfo()" href="#"/>')
+                x.write('<area shape="rect" coords="150,0,200,500" onclick="getBookInfo()" href="#"/>')
+                x.write('<area shape="rect" coords="200,0,250,500" onclick="getBookInfo()" href="#"/>')
+                x.write('<area shape="rect" coords="250,0,300,500" onclick="getBookInfo()" href="#"/>')
+                x.write('<area shape="rect" coords="300,0,350,500" onclick="getBookInfo()" href="#"/>')
                 x.write("</map>\n")
                 x.write("</div>\n")
                 counter = counter + 1
