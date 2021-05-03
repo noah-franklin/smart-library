@@ -31,12 +31,7 @@ function getBookShelf(dir, row) {
 }
 
 function getBookInfo() {
-  callNumbers = [
-    "F294.S2 J64 1996",
-    "F294.S2 S58 2014",
-    "F295.S1 U813",
-    "F311 .D66",
-  ];
+  callNumbers = ["F294.S2 J64 1996", "F294.S2 S58 2014", "F311 .D66"];
   callNumber = callNumbers[Math.floor(Math.random() * callNumbers.length)];
   callNumberFormated = callNumber.replaceAll(" ", "%20");
   console.log(callNumberFormated);

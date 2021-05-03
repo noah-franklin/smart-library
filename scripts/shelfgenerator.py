@@ -8,6 +8,7 @@ def get_stuff(directory, naming):
     files.sort()
     print(files)
     for file in files:
+        # Skip files we dont care about, if we dont do this the script will error
         if (file.startswith(".") or file.endswith(".py") or file.startswith("bookcases") 
         or file.startswith("zipped") or file.startswith("BackUpCopy") or file.endswith(".sh")
         or file.endswith(".txt") or file.endswith(".bat")):
