@@ -50,7 +50,7 @@ Location:  /var/www/html/vlib/idatabase
 
 # Instructions
 1. Install the prequisites
-2. Clone this repository
+2. Clone this repository or get it from the professor
 3. Right click index.html and "Open with Live Server"
 
 **NOTE:** Running the website locally will not display the black rectangular shelves on the dynamic map for each floor, push changes to the live website if you want to view them.
