@@ -51,7 +51,27 @@ Location:  /var/www/html/vlib/idatabase
 # Instructions
 1. Install the prequisites
 2. Clone this repository or get it from the professor
-3. Right click index.html and "Open with Live Server"
+3. Create a file called "connect.php" inside f20-Dynamic-Mapping/Admin folder with the following code and replace  `<DATABASE USERNAME>`,  `<DATABASE PASSWORD>`,  and `<DATABASE NAME>` with the correct info
+```php
+<?php
+   
+    $servername = "localhost";
+    $username = <DATABASE USERNAME>;
+    $password = <DATABASE PASSWORD>;
+    $database = <DATABASE NAME>;
+
+    $conn = new mysqli($servername, $username, $password, $database);
+
+    // Check connection
+    if ($conn -> connect_error) 
+    {
+      
+        die("Connection failed" .$conn->connect_error);
+      
+    }
+?> 
+```
+4. Right click index.html and "Open with Live Server"
 
 **NOTE:** Running the website locally will not display the black rectangular shelves on the dynamic map for each floor, push changes to the live website if you want to view them.
 
