@@ -4,9 +4,7 @@
 
 This repository documents our project done for **CPS485**.
 
-<<<<<<< HEAD
 **Personal Information:**
->>>>>>> d77bf9ec7ec4f67c488fa27b5aaaace550374891
 
         Noah Franklin     (franklin3@hawkmail.newpaltz.edu)
         Alexandra Maceda  (macedaa1@hawkmail.newpaltz.edu)
