@@ -1,13 +1,17 @@
+
+// debug functions to display bookcase or bookshelf pages manually
+
 function tester() {
-  // $(".main").load("./html/bookShelf.html");
+  
   $(".main").load("./html/bookShelf.html");
 }
 
 function tester1() {
   $(".main").load("./html/bookCase.html");
-  //$(".main").load("./html/bookcases/c01/a.html");
+  
 }
 
+// onclick attached to the black rectangular bookshelves to load the correct bookcase page
 function getBookCase(caseNum, side) {
   $(".main").load(
     "./html/bookcases/" + caseNum + "/" + side + ".html",
@@ -26,10 +30,13 @@ function getBookCase(caseNum, side) {
   );
 }
 
+// onclick attached to each bookshelf on a bookcase page to display to correct bookshelf page
 function getBookShelf(dir, row) {
   $(".main").load("./html" + "/" + dir + "/" + row + ".html");
 }
 
+// onclick attached to clickable columns on every book image on the bookshelf page, will bring them to the 
+// sojourners truth library catalog to show more info, currently the book call numbers are hard coded
 function getBookInfo() {
   callNumbers = ["F294.S2 J64 1996", "F294.S2 S58 2014", "F311 .D66"];
   callNumber = callNumbers[Math.floor(Math.random() * callNumbers.length)];

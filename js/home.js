@@ -1,8 +1,6 @@
 $(document).ready(function () {
   // jQuery methods go here...
-  // document.getElementById("mainfloormap").style.display = "block";
-  // document.getElementById("groundfloormap").style.display = "none";
-  // document.getElementById("concoursemap").style.display = "none";
+  
   $(".mainlink").click(function (e) {
     e.preventDefault();
     $(".main").load("./html/main.html");
