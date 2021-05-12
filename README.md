@@ -51,7 +51,7 @@ Location:  /var/www/html/vlib/idatabase
 # Instructions
 1. Install the prequisites
 2. Clone this repository or get it from the professor
-3. Create a file called "connect.php" inside f20-Dynamic-Mapping/Admin folder with the following code and replace  `<DATABASE USERNAME>`,  `<DATABASE PASSWORD>`,  and `<DATABASE NAME>` with the correct info
+3. OPTIONAL: Create a file called "connect.php" inside f20-Dynamic-Mapping/Admin folder with the following code and replace  `<DATABASE USERNAME>`,  `<DATABASE PASSWORD>`,  and `<DATABASE NAME>` with the correct info
 ```php
 <?php
    
