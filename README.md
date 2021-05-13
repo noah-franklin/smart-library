@@ -89,7 +89,7 @@ Location:  /var/www/html/vlib/idatabase
 
 ## 1: File Organization 
 
-Our first task was to organize all the book images of the library taken from previous semesters. The folders and images were organized in different ways (if at all) because different students were responsible with different sections of the library. We started by using FileZilla and the VPN to remotely move and rename folders to follow a conistant naming format so we could easily dsiplay this on the website later. The following format was provided by the Professor...
+Our first task was to organize all the book images of the library taken from previous semesters. The folders and images were organized in different ways (if at all) because different students were responsible with different sections of the library. We started by using FileZilla and the VPN to remotely move and rename folders to follow a consistent naming format so we could easily display this on the website later. The following format was provided by the Professor...
 
 Format: 
 
@@ -99,7 +99,7 @@ Example:
 
         vlib/idatabase/3-tahir/c46/a/section1/row1/IMG_0967
 
-After manually organizing all the folders up to the side level, we decided to make some shell scripts to help with creating, making, and moving files and folders for the sections, rows, and images. These scripts we usedn can be found in the scripts directory of this repository.
+After manually organizing all the folders up to the side level, we decided to make some shell scripts to help with creating, making, and moving files and folders for the sections, rows, and images. The scripts we used can be found in the scripts directory of this repository.
 
 ### Instructions for the scripts
 
@@ -109,7 +109,7 @@ After manually organizing all the folders up to the side level, we decided to ma
 
 ## 2: Bookcase/Bookshelf Generation
 
-Now that we fully organized the idatabase folder, we now needed to make another script that will generate bookcase and bookshelf html files for the entire library in a organized fashion. We first started by designing what the bookcase and bookshelf page would look like which can be found inside the html directory of this repo under bookCase.html and bookShelf.html respectively. Then we used python to make a program that will loop through every folder/file in the idatabase folder with the use of recursion. Then by making the program create html files and write the appropriate html code as it loops through all the files and folders, we now have all the html we need for the library. This python script can be found in the scripts directory of this repository.
+Now that we fully organized the idatabase folder, we now needed to make another script that will generate bookcase and bookshelf html files for the entire library in an organized fashion. We first started by designing what the bookcase and bookshelf page would look like which can be found inside the html directory of this repo under bookCase.html and bookShelf.html respectively. Then we used python to make a program that will loop through every folder/file in the idatabase folder with the use of recursion. Then by making the program create html files and write the appropriate html code as it loops through all the files and folders, we now have all the html we need for the library. This python script can be found in the scripts directory of this repository.
 
 ### Instructions for `shelfgenerator.py`
 
@@ -137,7 +137,7 @@ Further explanation with example:
 
 ## 3: Clickable Books 
 
-For future use when the CLARA/ANN system is more developed, the Professor wanted us to demostrate a way for the image to have clickable sections which will link to the sojourers truth library page to show more info about the book. This search also has to be done with a book call number as that will be provided later on when CLARA processes an image. We started by creating a map of clickable columns in an image. These columns when clicked will run a function to open a new page on the sojourners truth website to show more info about the book. The link is created by taking a book call number variable and adding it into the search url. This book call number variable is currently hard coded in but it can easily be changed to query a database to get all the book call numbers for a image. All of this was added to the `shelfgenerator.py` script
+For future use when the CLARA/ANN system is more developed, the Professor wanted us to demonstrate a way for the image to have clickable sections which will link to the sojourers truth library page to show more info about the book. This search also has to be done with a book call number as that will be provided later on when CLARA processes an image. We started by creating a map of clickable columns in an image. These columns when clicked will run a function to open a new page on the sojourners truth website to show more info about the book. The link is created by taking a book call number variable and adding it into the search url. This book call number variable is currently hard coded in but it can easily be changed to query a database to get all the book call numbers for a image. All of this was added to the `shelfgenerator.py` script
 
 Search URL:
 
