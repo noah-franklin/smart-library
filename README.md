@@ -36,7 +36,7 @@ Host: @a.cs.newpaltz.edu
 
 Location:  /var/www/html/vlib/idatabase
 
-**NOTE:** You will need to be connected with the VPN in order to access the "a" server where these book images are located
+**NOTE:** You will need to be connected with the VPN in order to access the "a" server where these book images are located. Also make sure you dont connect to the website with https protocol or the images might not load.
 
 # Prerequisites
 
@@ -45,13 +45,19 @@ Location:  /var/www/html/vlib/idatabase
 - **Live Share** (VSCode Extension to run a local web server to view the website)
 
 ## Live
-- **All Local Prequisites**
+- **All Local Prerequisites**
 - **Cisco AnyConnect Secure Mobility Client** (VPN needed to view the images on the live website and to connect to the "a" server)
 
 # Instructions
-1. Install the prequisites
+
+Local
+1. Install the prerequisites
 2. Clone this repository or get it from the professor
-3. OPTIONAL: Create a file called "connect.php" inside f20-Dynamic-Mapping/Admin folder with the following code and replace  `<DATABASE USERNAME>`,  `<DATABASE PASSWORD>`,  and `<DATABASE NAME>` with the correct info
+3. Right click index.html and "Open with Live Server"
+
+Live (wyvern)
+NOTE: Make sure a file called "connect.php" is located inside f20-Dynamic-Mapping/Admin folder with the following code and replace  `<DATABASE USERNAME>`,  `<DATABASE PASSWORD>`,  and `<DATABASE NAME>` with the correct info. This file is responsible for establishing a connection to the database for the dynamic rendered map and login features. I was not able to get this to work on a local environment as im not sure how to access the database on the username and password protected wyvern server. The web server hosting this website should have connect.php with our database info.
+
 ```php
 <?php
    
@@ -71,9 +77,7 @@ Location:  /var/www/html/vlib/idatabase
     }
 ?> 
 ```
-4. Right click index.html and "Open with Live Server"
-
-**NOTE:** Running the website locally will not display the black rectangular shelves on the dynamic map for each floor, push changes to the live website if you want to view them.
+**NOTE:** Running the website locally will not display the black rectangular shelves on the dynamic map for each floor, push changes to the live website if you want to view them. 
 
 # Design
 ![use case](./mockups/usecase.png)
@@ -124,7 +128,7 @@ The script output format is as follows:
 
         /bookcases/shelfnumber/side/sectionnumber/rownumber.html
         
-The bookcase html is located inside each shelfnumber under a.html and b.html for side a and side b respectivly of a bookcase.
+The bookcase html is located inside each shelfnumber under a.html and b.html for side a and side b respectively of a bookcase.
 
 The bookshelf html is located inside the a and b folders of the shelfnumber and organized per section and row
 
@@ -237,3 +241,6 @@ They can then click on a bookshelf to replace the bookcase page with the correct
 bookshelf page
 
 To finish it, you can then click a column on the book image to open a new page displaying more info about the book. The Bookcase and Bookshelf pages will display info about the bookcase number, section, and row accordingly and buttons to go back or the home button can be used to navigate.
+
+
+
